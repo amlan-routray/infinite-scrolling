@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import PageLimit from './Store/page-limit';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <PageLimit>
+      <App />
+    </PageLimit>
   </React.StrictMode>,
   document.getElementById('root')
 );
