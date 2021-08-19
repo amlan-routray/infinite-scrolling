@@ -4,7 +4,7 @@ const PageLimit = props => {
 
     const [limit,setLimit] = useState(5)
     const addLimit = () => {
-        setLimit(prev => prev<15?prev + 5:prev)
+        setLimit(prev => prev<15?prev + 5:0)
     }
 
     return (
